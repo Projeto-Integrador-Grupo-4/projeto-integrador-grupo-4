@@ -1,0 +1,338 @@
+/* Dependências */
+/* Fontes não web safe */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Variáveis globais */
+:root{
+   --size_xl: 3rem;
+   --size_lg: 2rem;
+   --size_md: 1rem;
+   --size_sm: .8rem;
+   --size_xs: .4rem;
+
+   --bg_primary: #414141;
+   --bg_button: #3D3D3D;
+   --cl_default: #9AEE66;
+   --lk_default: #6C6C6C;
+   --cl_txt_default: #D9D9D9;
+   --bg_input_text: #262626;
+   --cl_input_text: #9F9F9F;
+   --bd_input_text: rgba(154, 238, 102, 0.6);
+   --bd_input_text_select: #DA8B8B;
+
+   --thin: 300;
+   --regular: 400;
+   --bold: 700;
+}
+
+/* Cores */
+body{
+    background: var(--bg_primary);
+}
+
+.header{
+    border-bottom: 3px solid var(--cl_default);
+}
+
+.loginTitle{
+    color: var(--cl_txt_default);
+}
+
+input{
+    border-color: var(--bd_input_text);
+    background-color: var(--bg_input_text);
+    color: var(--cl_input_text);
+}
+
+.loginButton{
+    background-color: var(--bg_button);
+    color: var(--cl_default);
+}
+
+.loginForget{
+    color: var(--bd_input_text);
+}
+
+.loginLink{
+    color: var(--lk_default);
+}
+
+.promotion{
+    border: 1px solid var(--cl_default)
+}
+
+.promotion > .text > .title {
+    color: var(--cl_txt_default);
+}
+
+.functionality{
+    color: var(--cl_input_text);
+}
+
+.emphasis{
+    color: var(--cl_input_text);
+}
+
+.comment{
+    color: var(--cl_input_text);
+}
+
+.items{
+    color: var(--cl_txt_default);
+}
+
+/* Tipografia */
+.loginTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: var(--regular);
+    font-size: var(--size_xl);
+}
+
+input{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--thin);
+    font-size: var(--size_md);
+}
+
+.loginButton{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size_md);
+}
+
+.loginForget{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size_sm);
+}
+
+.loginLink{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size_sm);
+}
+
+
+.menu > ul > li> .loginLink {
+    font-size: var(--size_md);
+}
+
+.promotion > .text > .title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: var(--size_lg);
+}
+
+.functionality{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--regular);
+    font-size: var(--size_sm);
+}
+
+.emphasis {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size_md);
+}
+
+.comment{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: var(--regular);
+    font-size: var(--size_sm);
+}
+
+.items{
+    font-family: 'Bebas Neue', cursive;
+    font-size: var(--size_lg);
+}
+
+/* Estilos */
+
+.header{
+    text-align: center;
+}
+
+img{
+    height: 15vh;
+}
+
+.loginSection{
+    text-align: center;
+}
+
+.loginTitle {
+    text-align: center;
+}
+
+.loginForget{
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.loginLink{
+    text-decoration: none;
+}
+
+.products{
+    text-align: center;
+}
+
+/* Layout */
+
+/* Espaçamento */
+
+.header {
+    margin-top: var(--size_sm);
+}
+
+img{
+    margin-bottom: var(--size_sm);
+}
+
+.loginTitle{
+    margin-top: var(--size_xl);
+    margin-bottom: var(--size_xl);
+}
+
+input{
+    display: block;
+    margin: auto;
+    padding: var(--size_sm);
+    width: 40%;
+}
+
+.loginUser{
+    margin-bottom: var(--size_md);
+}
+
+.loginButton{
+    display: block;
+    margin: var(--size_md) auto;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: var(--size_sm);
+    padding-bottom: var(--size_sm);
+}
+
+.loginForget{
+    display: block;
+    margin: var(--size_lg) auto;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: var(--size_md);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    padding-right: var(--size_lg);
+}
+
+.marketPlace{
+    height: 5vh;
+    display: block;
+    position: absolute;
+    left: 95%;
+    top: 7vh;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: var(--size_md);
+    margin-bottom: var(--size_md);
+}
+
+.promotion{
+    padding: var(--size_lg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text{
+    display: inline-block;
+    width: 30%;
+    padding-top: var(--size_xl);
+}
+
+.highlight{
+    display: inline-block;
+    height: 40vh;
+    padding-left: 20%;
+}
+
+.promotion > .title{
+    display: flex;
+    padding-top: var(--size_xl);
+}
+
+.functionality{
+    margin-top: var(--size_xs);
+    display: inline-block;
+}
+
+.description{
+    margin: var(--size_md);
+    padding-bottom: var(--size_xl);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emphasis, .comment{
+    padding-left: 10%;
+    padding-bottom: 2vh;
+}
+
+.description > .text{
+    margin-left: 20%;
+}
+
+.marking{
+    height: 20vh;
+    margin-left: 15%;
+    margin-top: 6vh;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.asset{
+    margin-top: var(--size_lg);
+    margin-bottom: var(--size_lg);
+    margin-left: 2%;
+    width: 10%;
+    height: 20vh;
+    border: 1px solid var(--cl_default);
+}
+
+
+@media (max-width: 460px) {
+    input{
+        width: 80%;
+    }
+
+    ul{
+        display: block;
+    }
+
+    li{
+        padding: var(--size_md);
+    }
+}
